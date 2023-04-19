@@ -17,7 +17,7 @@
   <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container"> 
       <!-- Brand --> 
-      <a class="navbar-brand mr-auto" href="#">HOKEJ</a> 
+      <a class="navbar-brand mr-auto" href="#">Helenin drugi izbor</a> 
       
       <!-- Toggler/collapsibe Button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
@@ -26,8 +26,9 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"> <a class="nav-link" href="index.html">Početna stranica</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="podaci.html">Podaci o studentima</a> </li>
           <li class="nav-item"> <a class="nav-link" href="pitanje.html" >Taekwondo i Ja</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="ivanov_drugi_izbor.html">Ivanov drugi izbor</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://youtu.be/x9EfVpiPUF0" target="_blank" >Ivanov drugi izbor</a> </li>
         </ul>
       </div>
     </div>
@@ -67,30 +68,38 @@
           </p>
         </div>
         <div class="col-md-6">
-          <figure class="wow bounceInDown"> <img src="images/hokej.jpeg" alt="gym" class="img-fluid"/> </figure>
+          <figure class="wow bounceInDown"> <img src="images/los_hokej.jpg" onclick="showPopup('popup6')" alt="hokej1" class="img-fluid"/> </figure>
           <br><br><br>
-          <figure class="wow bounceInDown"> <img src="images/pozadina.webp" alt="gym" class="img-fluid"/> </figure>
+          <figure class="wow bounceInDown"> <img src="images/losi_klizaci.jpg" onclick="showPopup('popup7')" alt="hokej2" class="img-fluid"/> </figure>
         </div>
+        <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown" href="https://hr.wikipedia.org/wiki/Hokej_na_ledu" target="_blank" >Saznaj više</a>
       </div>
     </div>
 </div>
 
 <footer class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 offset-4 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
-          <div class="d-flex flex-wrap align-content-center">
-            <p>Web stranica izrađena za vrijeme pohađanja 
-              <a href="https://www.ferit.unios.hr/" target="_blank">Fakulteta elektrotehnike, računarstva i informacijskih tehnologija</a> u Osijeku u sklopu kolegija 
-              <a href="https://www.ferit.unios.hr/upisi-i-studijski-programi/preddiplomski-strucni-studij#racunarstvo#SR601">Multimedijska tehnika</a><br><br>
-              Stranicu izradili
-              <a href="https://gitlab.com/helena.orsolic">Helena Oršolić</a> i
-              <a href="https://gitlab.com">Ivan Peranović</a>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 offset-4 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
+        <div class="d-flex flex-wrap align-content-center">
+          <p>Web stranica izrađena za vrijeme pohađanja 
+            <a href="https://www.ferit.unios.hr/" target="_blank">Fakulteta elektrotehnike, računarstva i informacijskih tehnologija</a> u Osijeku u sklopu kolegija 
+            <a href="https://www.ferit.unios.hr/upisi-i-studijski-programi/preddiplomski-strucni-studij#racunarstvo#SR601" target="_blank">Multimedijska tehnika</a><br><br>
+            Stranicu izradila <a href="https://gitlab.com/helena.orsolic" target="_blank">Helena Oršolić</a>
         </div>
       </div>
     </div>
+  </div>
 </footer>
+
+<div id="popup6" class="popup">
+  <img src="images/hokej.jpeg" />
+  <button onclick="hidePopup('popup6')">Close</button>
+</div>
+<div id="popup7" class="popup">
+  <img src="images/klizaci.webp" />
+  <button onclick="hidePopup('popup7')">Close</button>
+</div>
   
   <!-- Optional JavaScript --> 
   <!-- jQuery first, then Bootstrap JS, ... -->
